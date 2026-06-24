@@ -437,8 +437,8 @@ export function DownloadFooter() {
           </div>
           <div>© 2026 RepairNear. All rights reserved.</div>
           <div className="flex gap-5">
-            <a href="#" className="hover:text-slate-900">Privacy</a>
-            <a href="#" className="hover:text-slate-900">Terms</a>
+            <a href="#privacy" className="hover:text-slate-900">Privacy</a>
+            <a href="#terms" className="hover:text-slate-900">Terms</a>
             <a href="#" className="hover:text-slate-900">Contact</a>
           </div>
         </div>
@@ -449,27 +449,29 @@ export function DownloadFooter() {
 
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-30 border-b border-white/40 bg-white/60 backdrop-blur-md">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
-        <div className="flex items-center gap-2">
-          <ImageWithFallback
-            src={LOGO_SRC}
-            alt="RepairNear logo"
-            className="h-8 w-8 rounded-xl object-cover shadow-md shadow-[#FF6B00]/30"
-          />
-          <span className="text-slate-900">RepairNear</span>
+      <header className="sticky top-0 z-30 border-b border-white/40 bg-white/60 backdrop-blur-md">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
+          <div className="flex items-center gap-2">
+            <ImageWithFallback
+                src={LOGO_SRC}
+                alt="RepairNear logo"
+                className="h-8 w-8 rounded-xl object-cover shadow-md shadow-[#FF6B00]/30"
+            />
+            <span className="text-slate-900">RepairNear</span>
+          </div>
+          <nav className="hidden items-center gap-8 text-sm text-slate-600 md:flex">
+            <a href="#how" className="hover:text-slate-900">How it works</a>
+            <a href="#protection" className="hover:text-slate-900">Protection</a>
+            <a href="#reviews" className="hover:text-slate-900">Reviews</a>
+            <a href="#faq" className="hover:text-slate-900">FAQ</a>
+            <a href="#about" className="hover:text-slate-900">About</a>
+            <a href="#terms" className="hover:text-slate-900">Terms</a>
+            <a href="#privacy" className="hover:text-slate-900">Privacy</a>
+          </nav>
+          <Button className="h-9 rounded-xl bg-[#FF6B00] px-4 text-white hover:bg-[#e55f00]">
+            Get the app
+          </Button>
         </div>
-        <nav className="hidden items-center gap-8 text-sm text-slate-600 md:flex">
-          <a href="#how" className="hover:text-slate-900">How it works</a>
-          <a href="#protection" className="hover:text-slate-900">Protection</a>
-          <a href="#reviews" className="hover:text-slate-900">Reviews</a>
-          <a href="#faq" className="hover:text-slate-900">FAQ</a>
-          <a href="#about" className="hover:text-slate-900">About</a>
-        </nav>
-        <Button className="h-9 rounded-xl bg-[#FF6B00] px-4 text-white hover:bg-[#e55f00]">
-          Get the app
-        </Button>
-      </div>
-    </header>
+      </header>
   );
 }

@@ -297,3 +297,188 @@ export function AboutRepairNear() {
     </section>
   );
 }
+
+export function TermsOfService() {
+  return (
+      <section id="terms" className="relative px-6 py-20 scroll-mt-20">
+        <div className="mx-auto max-w-3xl">
+          <Reveal className="text-center">
+            <div className="text-sm uppercase tracking-widest text-[#0F766E]">Legal</div>
+            <h2 className="mt-3 text-3xl text-slate-900 md:text-4xl">Terms of Service</h2>
+            <p className="mt-2 text-slate-500">Effective Date: June 2026</p>
+          </Reveal>
+
+          <Reveal className="mt-10">
+            <GlassCard className="p-4 md:p-6">
+              <Accordion type="single" collapsible className="w-full">
+                <AccordionItem value="terms-content" className="border-0">
+                  <AccordionTrigger className="text-base font-medium text-slate-900 hover:no-underline">
+                    Read Terms of Service
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-4 text-sm leading-relaxed text-slate-700 space-y-5">
+                    <div>
+                      <h3 className="text-lg font-semibold text-slate-900">1. Introduction</h3>
+                      <p className="mt-1">
+                        Welcome to RepairNear. By accessing or using our mobile application and services, you agree
+                        to be bound by these Terms of Service. If you do not agree, please do not use RepairNear.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-slate-900">2. Account Registration</h3>
+                      <p className="mt-1">
+                        You must provide accurate and complete information when creating an account. You are
+                        responsible for maintaining the confidentiality of your login credentials and for all
+                        activities under your account.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-slate-900">3. Service Description</h3>
+                      <p className="mt-1">
+                        RepairNear connects customers with independent repair technicians. We do not perform
+                        repairs ourselves; we facilitate the booking, tracking, and payment process. We make no
+                        guarantees regarding the quality or timeliness of repair services, but we vet technicians
+                        and provide a dispute resolution system.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-slate-900">4. Payments & Protection Plans</h3>
+                      <p className="mt-1">
+                        Payments are processed securely through our payment provider. Optional RepairNear
+                        Protection plans are subject to their own terms and provide additional dispute support.
+                        Refunds and cancellations are governed by our Refund Policy.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-slate-900">5. User Conduct</h3>
+                      <p className="mt-1">
+                        You agree not to misuse the platform, including posting false reviews, attempting to
+                        bypass payment, or engaging in any unlawful activity. We reserve the right to suspend or
+                        terminate accounts at our discretion.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-slate-900">6. Limitation of Liability</h3>
+                      <p className="mt-1">
+                        RepairNear shall not be liable for any indirect, incidental, or consequential damages
+                        arising from the use of our services. Our total liability is limited to the amount paid by
+                        you for the specific transaction giving rise to the claim.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-slate-900">7. Changes to Terms</h3>
+                      <p className="mt-1">
+                        We may update these Terms from time to time. Continued use of RepairNear after changes
+                        constitutes acceptance of the new Terms.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-slate-900">8. Contact</h3>
+                      <p className="mt-1">
+                        For questions about these Terms, contact us at{" "}
+                        <a href="mailto:support@repairnear.com" className="text-[#FF6B00] underline">
+                          support@repairnear.com
+                        </a>.
+                      </p>
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+  );
+}
+
+export function PrivacyPolicy() {
+  return (
+      <section id="privacy" className="relative px-6 py-20 scroll-mt-20">
+        <div className="mx-auto max-w-3xl">
+          <Reveal className="text-center">
+            <div className="text-sm uppercase tracking-widest text-[#0F766E]">Legal</div>
+            <h2 className="mt-3 text-3xl text-slate-900 md:text-4xl">Privacy Policy</h2>
+            <p className="mt-2 text-slate-500">Effective Date: June 2026</p>
+          </Reveal>
+
+          <Reveal className="mt-10">
+            <GlassCard className="p-4 md:p-6">
+              <Accordion type="single" collapsible className="w-full">
+                <AccordionItem value="privacy-content" className="border-0">
+                  <AccordionTrigger className="text-base font-medium text-slate-900 hover:no-underline">
+                    Read Privacy Policy
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-4 text-sm leading-relaxed text-slate-700 space-y-5">
+                    <div>
+                      <h3 className="text-lg font-semibold text-slate-900">1. Information We Collect</h3>
+                      <p className="mt-1">
+                        We collect your phone number, name, profile photo (if provided), device information,
+                        repair history, and location data when you use RepairNear. For technicians, we also
+                        collect shop details, subscription data, and job performance metrics.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-slate-900">2. How We Use Your Data</h3>
+                      <p className="mt-1">
+                        We use your information to create and manage your account, process bookings and payments,
+                        connect you with technicians, send notifications about your repairs, and improve our
+                        services. We do not sell your personal data to third parties.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-slate-900">3. Data Sharing</h3>
+                      <p className="mt-1">
+                        Your information is shared only as necessary: with the technician you book to complete a
+                        repair, with our payment processor to handle transactions, and with regulatory
+                        authorities when required by law. Review content may be displayed publicly on the
+                        platform.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-slate-900">4. Data Security</h3>
+                      <p className="mt-1">
+                        We implement industry‑standard measures to protect your data, including encryption,
+                        secure servers, and access controls. However, no method of transmission over the
+                        Internet is 100% secure.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-slate-900">5. Your Rights</h3>
+                      <p className="mt-1">
+                        You can access, update, or delete your personal information at any time through the app.
+                        You may also request a full data export or account deletion by contacting us. Deleting
+                        your account will remove your personal data, but some anonymised records may be retained
+                        for legal purposes.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-slate-900">6. Cookies & Tracking</h3>
+                      <p className="mt-1">
+                        Our app does not use cookies. We collect anonymous usage data through analytics tools to
+                        help us understand how users interact with RepairNear.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-slate-900">7. Changes to This Policy</h3>
+                      <p className="mt-1">
+                        We may update this Privacy Policy from time to time. Significant changes will be
+                        communicated via the app or email.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-slate-900">8. Contact</h3>
+                      <p className="mt-1">
+                        For privacy‑related inquiries, reach out to{" "}
+                        <a href="mailto:privacy@repairnear.com" className="text-[#FF6B00] underline">
+                          privacy@repairnear.com
+                        </a>.
+                      </p>
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </GlassCard>
+          </Reveal>
+        </div>
+      </section>
+  );
+}
