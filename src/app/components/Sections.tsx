@@ -135,9 +135,6 @@ export function HowItWorks() {
                 <div className="mt-1 text-xl text-slate-900">{s.title}</div>
                 <p className="mt-2 text-sm text-slate-600">{s.desc}</p>
               </GlassCard>
-              {i < steps.length - 1 && (
-                <ArrowRight className="absolute -right-3 top-1/2 hidden h-6 w-6 -translate-y-1/2 text-[#FF6B00] md:block" />
-              )}
             </StaggerItem>
           ))}
         </Stagger>
@@ -192,9 +189,6 @@ export function ForCustomersAndTechnicians() {
           </li>
         ))}
       </ul>
-      <Button className="mt-6 h-11 rounded-2xl bg-[#FF6B00] text-white hover:bg-[#e55f00]">
-        {cta}
-      </Button>
     </GlassCard>
   );
 
@@ -319,79 +313,6 @@ export function ProtectionPlan() {
   );
 }
 
-export function Testimonials() {
-  const quotes = [
-    {
-      name: "Ama Boateng",
-      role: "Customer · Accra",
-      rating: 5,
-      text: "Got my iPhone screen replaced in 2 hours. The live tracking gave me total peace of mind.",
-    },
-    {
-      name: "Kwame Mensah",
-      role: "Technician · Kumasi",
-      rating: 5,
-      text: "RepairNear doubled my bookings in a month. The job alerts are a game changer.",
-    },
-    {
-      name: "Yaa Owusu",
-      role: "Customer · Tema",
-      rating: 5,
-      text: "Transparent pricing — exactly what I needed. No haggling, no surprises.",
-    },
-    {
-      name: "Kojo Asare",
-      role: "Technician · Takoradi",
-      rating: 4,
-      text: "Easy to manage all my jobs in one app. Customers love the protection plan too.",
-    },
-  ];
-  return (
-    <section className="relative px-6 py-20">
-      <div className="mx-auto max-w-6xl">
-        <div className="mx-auto max-w-2xl text-center">
-          <div className="text-sm uppercase tracking-widest text-[#0F766E]">
-            Loved across Ghana
-          </div>
-          <h2 className="mt-3 text-3xl text-slate-900 md:text-4xl">
-            Trusted by customers and technicians alike
-          </h2>
-        </div>
-        <Stagger className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-          {quotes.map((q) => (
-            <StaggerItem key={q.name}>
-            <GlassCard className="flex h-full flex-col transition-transform duration-300 hover:-translate-y-1">
-              <div className="flex items-center gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star
-                    key={i}
-                    className={`h-4 w-4 ${
-                      i < q.rating
-                        ? "fill-[#FF6B00] text-[#FF6B00]"
-                        : "text-slate-300"
-                    }`}
-                  />
-                ))}
-              </div>
-              <p className="mt-4 flex-1 text-sm text-slate-700">"{q.text}"</p>
-              <div className="mt-5 flex items-center justify-between">
-                <div>
-                  <div className="text-sm text-slate-900">{q.name}</div>
-                  <div className="text-xs text-slate-500">{q.role}</div>
-                </div>
-                <span className="inline-flex items-center gap-1 rounded-full bg-[#0F766E]/10 px-2 py-0.5 text-[10px] text-[#0F766E]">
-                  <ShieldCheck className="h-3 w-3" />
-                  Verified
-                </span>
-              </div>
-            </GlassCard>
-            </StaggerItem>
-          ))}
-        </Stagger>
-      </div>
-    </section>
-  );
-}
 
 export function DownloadFooter() {
   return (

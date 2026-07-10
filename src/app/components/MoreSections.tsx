@@ -173,69 +173,6 @@ export function FAQ() {
   );
 }
 
-export function RefundPolicy() {
-  const points = [
-    {
-      title: "Before the repair starts",
-      desc: "Cancel any booking before the technician begins work and get a full refund — no questions asked.",
-    },
-    {
-      title: "If the technician doesn't show up",
-      desc: "Missed a confirmed appointment? You're automatically eligible for a 100% refund and a credit on your next booking.",
-    },
-    {
-      title: "If the repair fails or causes new issues",
-      desc: "With RepairNear Protection, you can request a re-repair or refund within 7 days of pickup. Our mediator will respond within 48 hours.",
-    },
-    {
-      title: "How to request a refund",
-      desc: "Open your booking in the app, tap 'Request Refund', and choose a reason. Funds are returned to your original payment method within 3–5 business days.",
-    },
-  ];
-
-  return (
-    <section className="relative px-6 py-20">
-      <div className="mx-auto max-w-4xl">
-        <Reveal className="mx-auto max-w-2xl text-center">
-          <div className="text-sm uppercase tracking-widest text-[#0F766E]">
-            Fair & simple
-          </div>
-          <h2 className="mt-3 text-3xl text-slate-900 md:text-4xl">
-            Refund & cancellation policy
-          </h2>
-          <p className="mt-3 text-slate-600">
-            We keep refunds straightforward. Here's what you need to know.
-          </p>
-        </Reveal>
-
-        <Reveal className="mt-10">
-          <GlassCard className="p-8 md:p-10">
-            <ol className="space-y-6">
-              {points.map((p, i) => (
-                <li key={p.title} className="flex gap-4">
-                  <div className="flex h-9 w-9 flex-none items-center justify-center rounded-xl bg-[#FF6B00]/10 text-sm text-[#FF6B00]">
-                    {i + 1}
-                  </div>
-                  <div>
-                    <div className="text-lg text-slate-900">{p.title}</div>
-                    <p className="mt-1 text-sm text-slate-600">{p.desc}</p>
-                  </div>
-                </li>
-              ))}
-            </ol>
-            <div className="mt-8 rounded-2xl border border-white/60 bg-white/50 p-4 text-sm text-slate-600">
-              Need help with a specific booking? Reach out to{" "}
-              <a href="mailto:support@repairnear.app" className="text-[#0F766E] underline">
-                support@repairnear.app
-              </a>{" "}
-              and our team will respond within one business day.
-            </div>
-          </GlassCard>
-        </Reveal>
-      </div>
-    </section>
-  );
-}
 
 export function AboutRepairNear() {
   return (
@@ -375,8 +312,8 @@ export function TermsOfService() {
                       <h3 className="text-lg font-semibold text-slate-900">8. Contact</h3>
                       <p className="mt-1">
                         For questions about these Terms, contact us at{" "}
-                        <a href="mailto:support@repairnear.com" className="text-[#FF6B00] underline">
-                          support@repairnear.com
+                        <a href="mailto:dagelectronics58@gmail.com" className="text-[#FF6B00] underline">
+                          dagelectronics58@gmail.com
                         </a>.
                       </p>
                     </div>
@@ -462,15 +399,6 @@ export function PrivacyPolicy() {
                       <p className="mt-1">
                         We may update this Privacy Policy from time to time. Significant changes will be
                         communicated via the app or email.
-                      </p>
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-semibold text-slate-900">8. Contact</h3>
-                      <p className="mt-1">
-                        For privacy‑related inquiries, reach out to{" "}
-                        <a href="mailto:privacy@repairnear.com" className="text-[#FF6B00] underline">
-                          privacy@repairnear.com
-                        </a>.
                       </p>
                     </div>
                   </AccordionContent>

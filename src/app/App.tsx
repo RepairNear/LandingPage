@@ -6,13 +6,11 @@ import {
   HowItWorks,
   ForCustomersAndTechnicians,
   ProtectionPlan,
-  Testimonials,
   DownloadFooter,
 } from "./components/Sections";
 import {
   CustomerTestimonials,
   FAQ,
-  RefundPolicy,
   AboutRepairNear,
   TermsOfService,   // new import
   PrivacyPolicy,    // new import
@@ -32,12 +30,8 @@ export default function App() {
           <section id="protection">
             <ProtectionPlan />
           </section>
-          <section id="reviews">
-            <Testimonials />
-          </section>
           <CustomerTestimonials />
           <FAQ />
-          <RefundPolicy />
           <AboutRepairNear />
           <TermsOfService />
           <PrivacyPolicy />
